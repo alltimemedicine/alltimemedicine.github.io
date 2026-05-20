@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>All Time Medicine — ওষুধ আপনার দরজায় | ত্রিশাল, ময়মনসিংহ মেডিসিন ডেলিভারি</title>
-  <meta name="description" content="All Time Medicine — ত্রিশালের ১২ ইউনিয়ন ও ভালুকায় ডোর-টু-ডোর মেডিসিন ডেলিভারি। ধানীখালা, বৈলর, কাঁঠাল, কানিহারী, রামপুর, হরিরামপুর, সাখুয়া, বালিপাড়া, মঠবাড়ী, মোক্ষপুর, আমিরাবাড়ী। ২৪/৭ সার্ভিস। WhatsApp: 01701-514563"/>
-  <meta name="keywords" content="medicine delivery trishal, ওষুধ ডেলিভারি ত্রিশাল, ভালুকা ওষুধ ডেলিভারি, medicine delivery mymensingh, all time medicine trishal, ত্রিশাল ফার্মেসি, bhaluka medicine delivery"/>
+  <title>All Time Medicine — ওষুধ আপনার দরজায় | ডোর-টু-ডোর মেডিসিন ডেলিভারি বাংলাদেশ</title>
+  <meta name="description" content="All Time Medicine — বাংলাদেশের বিশ্বস্ত ডোর-টু-ডোর মেডিসিন ডেলিভারি। প্রেসক্রিপশন দিন, ৩০ মিনিটে ওষুধ পৌঁছাবে আপনার দরজায়। ২৪/৭ সার্ভিস। WhatsApp: 01701-514563"/>
+  <meta name="keywords" content="medicine delivery bangladesh, ওষুধ ডেলিভারি, door to door medicine, all time medicine, pharmacy delivery dhaka"/>
   <meta name="robots" content="index, follow"/>
   <meta property="og:title" content="All Time Medicine — ওষুধ আপনার দরজায়"/>
   <meta property="og:description" content="৩০ মিনিটে ওষুধ ডেলিভারি। ২৪/৭ সার্ভিস। WhatsApp: 01701-514563"/>
@@ -361,111 +361,6 @@
     /* RESPONSIVE */
     @media(max-width:900px){.hero-stats{display:none;}.foot-grid{grid-template-columns:1fr 1fr;}}
     @media(max-width:640px){.nav-links{display:none;}.row2{grid-template-columns:1fr;}.order-box,.rx-box,.modal-box{padding:24px 16px;}.hero{padding:100px 5% 60px;}.track-row{flex-direction:column;}.foot-grid{grid-template-columns:1fr;}}
-
-    /* ══════════════════════════════════════════
-       ADMIN PANEL STYLES
-    ══════════════════════════════════════════ */
-    /* hidden admin trigger — invisible tap zone on logo */
-    .admin-secret-hit{position:fixed;bottom:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;}
-
-    /* Admin Sidebar */
-    .admin-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:700;display:none;backdrop-filter:blur(4px);}
-    .admin-overlay.open{display:block;}
-    .admin-panel{position:fixed;left:0;top:0;height:100vh;width:min(680px,100vw);background:var(--card);z-index:701;display:flex;flex-direction:column;box-shadow:10px 0 50px rgba(0,0,0,.25);transform:translateX(-100%);transition:transform .38s cubic-bezier(.4,0,.2,1);}
-    .admin-panel.open{transform:translateX(0);}
-    .admin-head{padding:20px 24px 16px;background:linear-gradient(135deg,#7c3aed,#4f46e5);color:#fff;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;}
-    .admin-head h2{font-size:1.1rem;font-weight:700;}
-    .admin-head p{font-size:.75rem;opacity:.8;margin-top:2px;}
-    .admin-x{background:rgba(255,255,255,.2);border:none;color:#fff;width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:1rem;display:grid;place-items:center;flex-shrink:0;}
-    .admin-x:hover{background:rgba(255,255,255,.35);}
-
-    /* Admin Tabs */
-    .admin-tabs{display:flex;border-bottom:2px solid var(--border);background:var(--gp);flex-shrink:0;}
-    .atab{flex:1;padding:12px 8px;border:none;background:transparent;font-family:inherit;font-size:.83rem;font-weight:600;cursor:pointer;color:var(--gray);transition:all .2s;border-bottom:3px solid transparent;margin-bottom:-2px;}
-    .atab.active{color:#7c3aed;border-bottom-color:#7c3aed;background:var(--card);}
-    .atab:hover:not(.active){color:var(--text);background:var(--card);}
-
-    /* Admin Body */
-    .admin-body{flex:1;overflow-y:auto;padding:18px;}
-    .admin-section{display:none;}
-    .admin-section.active{display:block;}
-
-    /* Medicine List in Admin */
-    .adm-med-list{display:flex;flex-direction:column;gap:10px;margin-bottom:20px;}
-    .adm-med-item{background:var(--gp);border:1.5px solid var(--border);border-radius:14px;padding:12px 14px;display:flex;align-items:center;gap:12px;}
-    .adm-med-ico{font-size:1.8rem;flex-shrink:0;width:44px;height:44px;display:grid;place-items:center;background:var(--card);border-radius:10px;border:1px solid var(--border);}
-    .adm-med-info{flex:1;min-width:0;}
-    .adm-med-name{font-size:.88rem;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-    .adm-med-meta{font-size:.74rem;color:var(--gray);margin-top:2px;}
-    .adm-med-price{font-size:.88rem;font-weight:700;color:#7c3aed;white-space:nowrap;}
-    .adm-med-acts{display:flex;gap:6px;flex-shrink:0;}
-    .adm-edit-btn{background:#7c3aed;color:#fff;border:none;width:32px;height:32px;border-radius:8px;cursor:pointer;font-size:.85rem;display:grid;place-items:center;transition:background .2s;}
-    .adm-edit-btn:hover{background:#6d28d9;}
-    .adm-del-btn{background:#fee2e2;color:#b91c1c;border:none;width:32px;height:32px;border-radius:8px;cursor:pointer;font-size:.85rem;display:grid;place-items:center;transition:background .2s;}
-    .adm-del-btn:hover{background:#fca5a5;}
-    .adm-stock-badge{font-size:.67rem;font-weight:700;padding:2px 7px;border-radius:8px;}
-    .adm-stock-y{background:#dcfce7;color:#15803d;}
-    .adm-stock-n{background:#fee2e2;color:#b91c1c;}
-
-    /* Add / Edit Form */
-    .adm-form{background:var(--gp);border:1.5px solid var(--border);border-radius:16px;padding:18px;margin-bottom:18px;}
-    .adm-form h3{font-size:.98rem;font-weight:700;color:var(--text);margin-bottom:14px;display:flex;align-items:center;gap:8px;}
-    .adm-row2{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
-    .adm-fg{margin-bottom:12px;}
-    .adm-fg label{display:block;font-size:.78rem;font-weight:700;margin-bottom:5px;color:var(--text);}
-    .adm-fg input,.adm-fg select,.adm-fg textarea{width:100%;padding:9px 12px;border:1.5px solid var(--iborder);border-radius:9px;font-family:inherit;font-size:.88rem;outline:none;background:var(--ibg);color:var(--text);transition:border-color .2s;}
-    .adm-fg input:focus,.adm-fg select:focus,.adm-fg textarea:focus{border-color:#7c3aed;}
-    .adm-fg textarea{resize:vertical;min-height:60px;}
-    .adm-save-btn{width:100%;background:#7c3aed;color:#fff;border:none;padding:11px;border-radius:10px;font-family:inherit;font-size:.92rem;font-weight:700;cursor:pointer;transition:background .2s,transform .15s;}
-    .adm-save-btn:hover{background:#6d28d9;transform:translateY(-1px);}
-    .adm-cancel-btn{width:100%;background:transparent;color:var(--gray);border:1.5px solid var(--border);padding:9px;border-radius:10px;font-family:inherit;font-size:.85rem;font-weight:600;cursor:pointer;margin-top:7px;}
-    .adm-cancel-btn:hover{border-color:var(--gray);}
-
-    /* Emoji Picker */
-    .emoji-grid{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;}
-    .emoji-opt{width:34px;height:34px;border-radius:8px;border:1.5px solid var(--border);background:var(--card);cursor:pointer;font-size:1.1rem;display:grid;place-items:center;transition:all .15s;}
-    .emoji-opt:hover,.emoji-opt.sel{border-color:#7c3aed;background:#f3f0ff;}
-    .emoji-inp-row{display:flex;gap:8px;align-items:center;margin-bottom:6px;}
-    .emoji-inp-row input{flex:1;padding:8px 11px;border:1.5px solid var(--iborder);border-radius:9px;font-family:inherit;font-size:.88rem;outline:none;background:var(--ibg);color:var(--text);}
-    .emoji-preview{font-size:1.6rem;width:38px;height:38px;display:grid;place-items:center;background:var(--card);border:1.5px solid var(--border);border-radius:9px;}
-
-    /* Area List */
-    .adm-area-list{display:flex;flex-direction:column;gap:8px;margin-bottom:16px;}
-    .adm-area-item{background:var(--gp);border:1.5px solid var(--border);border-radius:12px;padding:10px 14px;display:flex;align-items:center;gap:10px;}
-    .adm-area-ico{font-size:1.3rem;}
-    .adm-area-info{flex:1;}
-    .adm-area-name{font-size:.87rem;font-weight:700;color:var(--text);}
-    .adm-area-sub{font-size:.73rem;color:var(--gray);}
-    .adm-area-acts{display:flex;gap:6px;}
-
-    /* Stats */
-    .adm-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:18px;}
-    .adm-stat{background:var(--gp);border:1.5px solid var(--border);border-radius:14px;padding:16px;text-align:center;}
-    .adm-stat-n{font-size:1.7rem;font-weight:700;color:#7c3aed;}
-    .adm-stat-l{font-size:.76rem;color:var(--gray);margin-top:3px;}
-
-    /* Reset button */
-    .adm-reset-btn{background:#fee2e2;color:#b91c1c;border:1.5px solid #fca5a5;padding:9px 16px;border-radius:10px;font-family:inherit;font-size:.83rem;font-weight:700;cursor:pointer;transition:background .2s;width:100%;margin-top:10px;}
-    .adm-reset-btn:hover{background:#fca5a5;}
-
-    /* Image upload in admin */
-    .adm-img-zone{border:2px dashed var(--iborder);border-radius:10px;padding:16px;text-align:center;cursor:pointer;background:var(--ibg);transition:border-color .2s;position:relative;}
-    .adm-img-zone:hover{border-color:#7c3aed;}
-    .adm-img-prev{width:80px;height:80px;object-fit:contain;border-radius:8px;margin:0 auto 8px;display:block;}
-    .adm-img-zone input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;}
-    .adm-img-label{font-size:.8rem;color:var(--gray);}
-
-    /* Password overlay */
-    .admin-lock{position:fixed;inset:0;z-index:710;background:rgba(0,0,0,.75);backdrop-filter:blur(8px);display:none;place-items:center;}
-    .admin-lock.open{display:grid;}
-    .admin-lock-box{background:var(--card);border-radius:22px;padding:40px 36px;max-width:380px;width:92%;text-align:center;animation:popIn .3s ease;}
-    .admin-lock-box h2{font-size:1.4rem;font-weight:700;margin-bottom:6px;color:var(--text);}
-    .admin-lock-box p{font-size:.86rem;color:var(--gray);margin-bottom:22px;}
-    .admin-lock-box input{width:100%;padding:12px 16px;border:1.5px solid var(--iborder);border-radius:11px;font-family:inherit;font-size:1rem;outline:none;background:var(--ibg);color:var(--text);text-align:center;letter-spacing:4px;font-size:1.2rem;margin-bottom:12px;}
-    .admin-lock-box input:focus{border-color:#7c3aed;}
-    .admin-unlock-btn{width:100%;background:#7c3aed;color:#fff;border:none;padding:13px;border-radius:11px;font-family:inherit;font-size:.97rem;font-weight:700;cursor:pointer;}
-    .admin-unlock-btn:hover{background:#6d28d9;}
-    .admin-lock-err{font-size:.82rem;color:var(--red);margin-top:8px;display:none;}
   </style>
 </head>
 <body>
@@ -514,7 +409,7 @@
     <div class="hero-left">
       <div class="hero-badge"><span class="pulse"></span>বাংলাদেশের বিশ্বস্ত ওষুধ ডেলিভারি সার্ভিস</div>
       <h1>অসুস্থতায় ছোটাছুটি নয় —<br/>ওষুধ আসবে <em>আপনার দরজায়</em></h1>
-      <p class="hero-sub">ত্রিশালের ১২ ইউনিয়ন ও ভালুকায় প্রেসক্রিপশন পাঠান বা ওষুধ বেছে নিন। ৩০ মিনিটে নিরাপদে আপনার ঘরে পৌঁছে দেব।</p>
+      <p class="hero-sub">প্রেসক্রিপশন পাঠান বা ওষুধ বেছে নিন। ৩০ মিনিটে নিরাপদে আপনার ঘরে পৌঁছে দেব।</p>
       <div class="hero-btns">
         <button class="btn-gold" onclick="document.getElementById('medicines').scrollIntoView({behavior:'smooth'})">💊 ওষুধ দেখুন ও অর্ডার করুন</button>
         <button class="btn-ghost" onclick="document.getElementById('prescription').scrollIntoView({behavior:'smooth'})">📋 প্রেসক্রিপশন পাঠান →</button>
@@ -629,15 +524,25 @@
 <section class="area-sec" id="areas">
   <div class="reveal" style="text-align:center">
     <div class="sec-lbl">ডেলিভারি এরিয়া</div>
-    <div class="sec-title" id="areaTitle">ত্রিশাল উপজেলার সব ইউনিয়নে<br/>এবং ভালুকায় সার্ভিস দিচ্ছি</div>
-    <p class="sec-sub" style="margin:0 auto" id="areaSubtitle">ত্রিশালের ১২টি ইউনিয়ন ও ভালুকা উপজেলায় ডেলিভারি পাওয়া যাচ্ছে। আপনার এলাকা না থাকলে WhatsApp-এ জানান।</p>
-    <!-- ★ সার্ভিস কভারেজ ব্যাজ -->
-    <div id="coverageBadge" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:var(--gp);border:1.5px solid var(--border);padding:8px 20px;border-radius:30px;font-size:.85rem;font-weight:700;color:var(--g);">
-      📍 <span id="coverageText">ত্রিশাল ও আশেপাশের এলাকা</span>
+    <div class="sec-title">আমরা যেসব এলাকায় সার্ভিস দিই</div>
+    <p class="sec-sub" style="margin:0 auto">আপনার এলাকা না থাকলে WhatsApp-এ জানান।</p>
+  </div>
+  <div class="area-grid reveal">
+    <div class="area-card"><div class="area-icon">🏙️</div><div class="area-name">মিরপুর</div><div class="area-sub">সব সেকশন</div></div>
+    <div class="area-card"><div class="area-icon">🏙️</div><div class="area-name">উত্তরা</div><div class="area-sub">সব সেক্টর</div></div>
+    <div class="area-card"><div class="area-icon">🏙️</div><div class="area-name">মোহাম্মদপুর</div><div class="area-sub">সম্পূর্ণ এলাকা</div></div>
+    <div class="area-card"><div class="area-icon">🏙️</div><div class="area-name">ধানমন্ডি</div><div class="area-sub">সম্পূর্ণ এলাকা</div></div>
+    <div class="area-card"><div class="area-icon">🏙️</div><div class="area-name">গুলশান</div><div class="area-sub">১ ও ২</div></div>
+    <div class="area-card"><div class="area-icon">🏙️</div><div class="area-name">বনানী</div><div class="area-sub">সম্পূর্ণ এলাকা</div></div>
+    <div class="area-card"><div class="area-icon">🏙️</div><div class="area-name">বাড্ডা</div><div class="area-sub">সম্পূর্ণ এলাকা</div></div>
+    <div class="area-card"><div class="area-icon">🏙️</div><div class="area-name">রামপুরা</div><div class="area-sub">সম্পূর্ণ এলাকা</div></div>
+    <div class="area-card"><div class="area-icon">🏙️</div><div class="area-name">খিলগাঁও</div><div class="area-sub">সম্পূর্ণ এলাকা</div></div>
+    <div class="area-card"><div class="area-icon">🏙️</div><div class="area-name">মতিঝিল</div><div class="area-sub">সম্পূর্ণ এলাকা</div></div>
+    <div class="area-card"><div class="area-icon">🏙️</div><div class="area-name">পল্টন</div><div class="area-sub">সম্পূর্ণ এলাকা</div></div>
+    <div class="area-card" style="border:2px dashed var(--g);cursor:pointer" onclick="window.open('https://wa.me/8801701514563?text=আমার এলাকায় ডেলিভারি হবে কি?','_blank')">
+      <div class="area-icon">➕</div><div class="area-name">আপনার এলাকা?</div><div class="area-sub">জিজ্ঞেস করুন</div>
     </div>
   </div>
-  <!-- ★ এলাকার কার্ডগুলো JS দিয়ে রেন্ডার হবে -->
-  <div class="area-grid reveal" id="areaGrid"></div>
 </section>
 
 <!-- TRUST -->
@@ -706,12 +611,12 @@
     <div class="sec-title">তারা কী বলছেন?</div>
   </div>
   <div class="testis reveal">
-    <div class="testi"><div class="stars">★★★★★</div><p>রাতে হঠাৎ মায়ের ইনসুলিন শেষ। মাত্র ২৫ মিনিটে ডেলিভারি পেয়ে অবাক হয়েছি!</p><div class="testi-au"><div class="testi-av">ক</div><div><div class="testi-name">করিম সাহেব</div><div class="testi-loc">📍 ত্রিশাল সদর</div></div></div></div>
-    <div class="testi"><div class="stars">★★★★★</div><p>বাচ্চার জ্বর, বের হওয়া সম্ভব ছিল না। ৩০ মিনিটে ওষুধ পেলাম। দাম বাজারের মতোই।</p><div class="testi-au"><div class="testi-av">ফ</div><div><div class="testi-name">ফাতেমা বেগম</div><div class="testi-loc">📍 ত্রিশাল বাজার</div></div></div></div>
-    <div class="testi"><div class="stars">★★★★★</div><p>বৃদ্ধ বাবার ওষুধ এখন ঘরে বসেই পাই। সত্যিই অনেক উপকার হচ্ছে।</p><div class="testi-au"><div class="testi-av">স</div><div><div class="testi-name">সালাম মিয়া</div><div class="testi-loc">📍 কাঁঠালি, ত্রিশাল</div></div></div></div>
-    <div class="testi"><div class="stars">★★★★★</div><p>ডায়াবেটিসের ওষুধ প্রতিমাসে লাগে। All Time Medicine এখন আমার নিয়মিত ভরসা।</p><div class="testi-au"><div class="testi-av">র</div><div><div class="testi-name">রহিমা খাতুন</div><div class="testi-loc">📍 ময়মনসিংহ সদর</div></div></div></div>
-    <div class="testi"><div class="stars">★★★★☆</div><p>খুব দ্রুত সার্ভিস। ফার্মাসিস্ট ফোনে বিস্তারিত বুঝিয়ে দিলেন।</p><div class="testi-au"><div class="testi-av">আ</div><div><div class="testi-name">আরিফুল ইসলাম</div><div class="testi-loc">📍 বালিপাড়া, ত্রিশাল</div></div></div></div>
-    <div class="testi"><div class="stars">★★★★★</div><p>রাত ১২টায় অর্ডার করেছিলাম, ৩৫ মিনিটে ওষুধ পেয়েছি। অসাধারণ!</p><div class="testi-au"><div class="testi-av">ন</div><div><div class="testi-name">নাজমুল হোসেন</div><div class="testi-loc">📍 হরিরামপুর, ত্রিশাল</div></div></div></div>
+    <div class="testi"><div class="stars">★★★★★</div><p>রাতে হঠাৎ মায়ের ইনসুলিন শেষ। মাত্র ২৫ মিনিটে ডেলিভারি পেয়ে অবাক হয়েছি!</p><div class="testi-au"><div class="testi-av">ক</div><div><div class="testi-name">করিম সাহেব</div><div class="testi-loc">📍 ঢাকা, মিরপুর</div></div></div></div>
+    <div class="testi"><div class="stars">★★★★★</div><p>বাচ্চার জ্বর, বের হওয়া সম্ভব ছিল না। ৩০ মিনিটে ওষুধ পেলাম। দাম বাজারের মতোই।</p><div class="testi-au"><div class="testi-av">ফ</div><div><div class="testi-name">ফাতেমা বেগম</div><div class="testi-loc">📍 চট্টগ্রাম, পাঁচলাইশ</div></div></div></div>
+    <div class="testi"><div class="stars">★★★★★</div><p>বৃদ্ধ বাবার ওষুধ এখন ঘরে বসেই পাই। সত্যিই অনেক উপকার হচ্ছে।</p><div class="testi-au"><div class="testi-av">স</div><div><div class="testi-name">সালাম মিয়া</div><div class="testi-loc">📍 সিলেট, জিন্দাবাজার</div></div></div></div>
+    <div class="testi"><div class="stars">★★★★★</div><p>ডায়াবেটিসের ওষুধ প্রতিমাসে লাগে। All Time Medicine এখন আমার নিয়মিত ভরসা।</p><div class="testi-au"><div class="testi-av">র</div><div><div class="testi-name">রহিমা খাতুন</div><div class="testi-loc">📍 ঢাকা, উত্তরা</div></div></div></div>
+    <div class="testi"><div class="stars">★★★★☆</div><p>খুব দ্রুত সার্ভিস। ফার্মাসিস্ট ফোনে বিস্তারিত বুঝিয়ে দিলেন।</p><div class="testi-au"><div class="testi-av">আ</div><div><div class="testi-name">আরিফুল ইসলাম</div><div class="testi-loc">📍 ঢাকা, ধানমন্ডি</div></div></div></div>
+    <div class="testi"><div class="stars">★★★★★</div><p>রাত ১২টায় অর্ডার করেছিলাম, ৩৫ মিনিটে ওষুধ পেয়েছি। অসাধারণ!</p><div class="testi-au"><div class="testi-av">ন</div><div><div class="testi-name">নাজমুল হোসেন</div><div class="testi-loc">📍 ঢাকা, বাড্ডা</div></div></div></div>
   </div>
 </section>
 
@@ -823,220 +728,9 @@
 <!-- TOAST -->
 <div class="toast" id="toast"></div>
 
-<!-- ADMIN SECRET — কোনো বাটন নেই, লোগোতে ৫ বার ট্যাপ করুন -->
-
-<!-- ADMIN PASSWORD LOCK -->
-<div class="admin-lock" id="adminLock">
-  <div class="admin-lock-box">
-    <div style="font-size:3rem;margin-bottom:10px;">🔐</div>
-    <h2>অ্যাডমিন প্রবেশ</h2>
-    <p>অ্যাডমিন প্যানেল খুলতে পাসওয়ার্ড দিন<br/><small style="color:var(--g)">(ডিফল্ট: 1234)</small></p>
-    <input type="password" id="adminPwInput" placeholder="••••" onkeydown="if(event.key==='Enter')checkAdminPw()"/>
-    <button class="admin-unlock-btn" onclick="checkAdminPw()">🔓 প্রবেশ করুন</button>
-    <div class="admin-lock-err" id="adminPwErr">❌ পাসওয়ার্ড ভুল! আবার চেষ্টা করুন।</div>
-    <button class="adm-cancel-btn" style="margin-top:10px" onclick="closeAdminLock()">বাতিল করুন</button>
-  </div>
-</div>
-
-<!-- ADMIN PANEL SIDEBAR -->
-<div class="admin-overlay" id="adminOverlay" onclick="closeAdmin()"></div>
-<div class="admin-panel" id="adminPanel">
-  <div class="admin-head">
-    <div>
-      <h2>⚙️ অ্যাডমিন প্যানেল</h2>
-      <p>ওষুধ, এলাকা ও তথ্য পরিচালনা করুন</p>
-    </div>
-    <button class="admin-x" onclick="closeAdmin()">✕</button>
-  </div>
-
-  <!-- Tabs -->
-  <div class="admin-tabs">
-    <button class="atab active" onclick="switchTab('medicines',this)">💊 ওষুধ</button>
-    <button class="atab" onclick="switchTab('areas',this)">📍 এলাকা</button>
-    <button class="atab" onclick="switchTab('settings',this)">🔧 সেটিং</button>
-  </div>
-
-  <div class="admin-body">
-
-    <!-- ── TAB: MEDICINES ── -->
-    <div class="admin-section active" id="tab-medicines">
-      <div class="adm-stats" id="admStats"></div>
-
-      <!-- Add / Edit Form -->
-      <div class="adm-form" id="admMedForm">
-        <h3 id="admFormTitle">➕ নতুন ওষুধ যোগ করুন</h3>
-
-        <div class="adm-row2">
-          <div class="adm-fg">
-            <label>ওষুধের নাম *</label>
-            <input type="text" id="af_name" placeholder="যেমন: Napa 500mg"/>
-          </div>
-          <div class="adm-fg">
-            <label>জেনেরিক নাম *</label>
-            <input type="text" id="af_generic" placeholder="যেমন: Paracetamol"/>
-          </div>
-        </div>
-
-        <div class="adm-row2">
-          <div class="adm-fg">
-            <label>কোম্পানি *</label>
-            <input type="text" id="af_company" placeholder="যেমন: Beximco"/>
-          </div>
-          <div class="adm-fg">
-            <label>দাম (টাকা) *</label>
-            <input type="number" id="af_price" placeholder="যেমন: 5" min="0" step="0.5"/>
-          </div>
-        </div>
-
-        <div class="adm-row2">
-          <div class="adm-fg">
-            <label>একক (unit)</label>
-            <input type="text" id="af_unit" placeholder="পিস / বোতল / ভায়াল"/>
-          </div>
-          <div class="adm-fg">
-            <label>ক্যাটাগরি</label>
-            <select id="af_cat">
-              <option value="fever">জ্বর/ব্যথা</option>
-              <option value="diabetes">ডায়াবেটিস</option>
-              <option value="pressure">রক্তচাপ</option>
-              <option value="gastric">গ্যাস্ট্রিক</option>
-              <option value="vitamin">ভিটামিন</option>
-              <option value="antibiotic">এন্টিবায়োটিক</option>
-              <option value="other">অন্যান্য</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="adm-row2">
-          <div class="adm-fg">
-            <label>ধরন (Rx/OTC)</label>
-            <select id="af_badge">
-              <option value="otc">OTC (প্রেসক্রিপশন লাগে না)</option>
-              <option value="rx">Rx (প্রেসক্রিপশন লাগে)</option>
-            </select>
-          </div>
-          <div class="adm-fg">
-            <label>স্টক আছে?</label>
-            <select id="af_stock">
-              <option value="true">✅ আছে</option>
-              <option value="false">❌ নেই</option>
-            </select>
-          </div>
-        </div>
-
-        <!-- Emoji / Image -->
-        <div class="adm-fg">
-          <label>আইকন (ইমোজি বা ছবি)</label>
-          <div class="emoji-inp-row">
-            <input type="text" id="af_ico" placeholder="ইমোজি লিখুন বা নিচে থেকে বেছে নিন" oninput="updateEmojiPreview()" />
-            <div class="emoji-preview" id="emojiPreview">💊</div>
-          </div>
-          <div class="emoji-grid" id="emojiGrid"></div>
-        </div>
-
-        <!-- Image upload -->
-        <div class="adm-fg">
-          <label>ছবি আপলোড (ঐচ্ছিক — ইমোজির বদলে ছবি দেখাবে)</label>
-          <div class="adm-img-zone" id="admImgZone" onclick="document.getElementById('af_imgFile').click()">
-            <img id="admImgPrev" class="adm-img-prev" src="" style="display:none" alt=""/>
-            <input type="file" id="af_imgFile" accept="image/*" onchange="handleAdmImg(this)" style="display:none"/>
-            <div class="adm-img-label" id="admImgLabel">📷 ক্লিক করে ছবি আপলোড করুন<br/><small>(JPG, PNG, WebP — সর্বোচ্চ 2MB)</small></div>
-          </div>
-          <button type="button" style="margin-top:6px;background:transparent;border:none;color:var(--red);cursor:pointer;font-size:.8rem" onclick="clearAdmImg()">🗑️ ছবি সরান</button>
-        </div>
-
-        <input type="hidden" id="af_id" value=""/>
-        <input type="hidden" id="af_imgData" value=""/>
-
-        <button class="adm-save-btn" onclick="saveAdmMed()">💾 সেভ করুন</button>
-        <button class="adm-cancel-btn" onclick="resetAdmForm()">বাতিল করুন</button>
-      </div>
-
-      <!-- Medicine List -->
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
-        <strong style="font-size:.92rem;color:var(--text)">📋 ওষুধ তালিকা</strong>
-        <input type="search" placeholder="খুঁজুন..." id="admSearch" oninput="renderAdmList()" style="padding:6px 12px;border:1.5px solid var(--iborder);border-radius:20px;font-family:inherit;font-size:.83rem;outline:none;background:var(--ibg);color:var(--text);width:140px"/>
-      </div>
-      <div class="adm-med-list" id="admMedList"></div>
-    </div>
-
-    <!-- ── TAB: AREAS ── -->
-    <div class="admin-section" id="tab-areas">
-      <div class="adm-form">
-        <h3 id="admAreaFormTitle">➕ নতুন এলাকা যোগ করুন</h3>
-        <div class="adm-row2">
-          <div class="adm-fg">
-            <label>এলাকার নাম *</label>
-            <input type="text" id="aa_name" placeholder="যেমন: ত্রিশাল সদর"/>
-          </div>
-          <div class="adm-fg">
-            <label>বিবরণ</label>
-            <input type="text" id="aa_sub" placeholder="যেমন: ৬নং ইউনিয়ন"/>
-          </div>
-        </div>
-        <div class="adm-fg">
-          <label>আইকন ইমোজি</label>
-          <input type="text" id="aa_icon" placeholder="যেমন: 🏙️" value="🏙️"/>
-        </div>
-        <input type="hidden" id="aa_idx" value=""/>
-        <button class="adm-save-btn" onclick="saveAdmArea()">💾 এলাকা সেভ করুন</button>
-        <button class="adm-cancel-btn" onclick="resetAreaForm()">বাতিল করুন</button>
-      </div>
-
-      <strong style="font-size:.92rem;color:var(--text);display:block;margin-bottom:10px">📍 ডেলিভারি এলাকা সমূহ</strong>
-      <div class="adm-area-list" id="admAreaList"></div>
-    </div>
-
-    <!-- ── TAB: SETTINGS ── -->
-    <div class="admin-section" id="tab-settings">
-      <div class="adm-form">
-        <h3>🔑 পাসওয়ার্ড পরিবর্তন</h3>
-        <div class="adm-fg">
-          <label>বর্তমান পাসওয়ার্ড</label>
-          <input type="password" id="st_curPw" placeholder="বর্তমান পাসওয়ার্ড"/>
-        </div>
-        <div class="adm-fg">
-          <label>নতুন পাসওয়ার্ড</label>
-          <input type="password" id="st_newPw" placeholder="নতুন পাসওয়ার্ড"/>
-        </div>
-        <div class="adm-fg">
-          <label>নতুন পাসওয়ার্ড নিশ্চিত করুন</label>
-          <input type="password" id="st_confPw" placeholder="আবার লিখুন"/>
-        </div>
-        <button class="adm-save-btn" onclick="changePw()">🔑 পাসওয়ার্ড পরিবর্তন করুন</button>
-      </div>
-
-      <div class="adm-form">
-        <h3>🏷️ ক্যাটাগরি ফিল্টার বাটন যোগ করুন</h3>
-        <div class="adm-fg">
-          <label>ক্যাটাগরি কী (ইংরেজিতে)</label>
-          <input type="text" id="st_catKey" placeholder="যেমন: eye, skin"/>
-        </div>
-        <div class="adm-fg">
-          <label>ক্যাটাগরির নাম (বাংলায়)</label>
-          <input type="text" id="st_catName" placeholder="যেমন: চোখের ওষুধ"/>
-        </div>
-        <button class="adm-save-btn" onclick="addCategory()">➕ ক্যাটাগরি যোগ করুন</button>
-      </div>
-      <div style="margin-bottom:10px;font-size:.88rem;font-weight:700;color:var(--text)">বর্তমান ক্যাটাগরি সমূহ:</div>
-      <div id="admCatList" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px"></div>
-
-      <div class="adm-form">
-        <h3>🗄️ ডেটা ব্যাকআপ ও রিসেট</h3>
-        <p style="font-size:.82rem;color:var(--gray);margin-bottom:12px">আপনার সমস্ত পরিবর্তন localStorage-এ সেভ হয়। নিচের বোতাম দিয়ে ব্যাকআপ নিন বা রিসেট করুন।</p>
-        <button class="adm-save-btn" onclick="exportData()" style="margin-bottom:8px">📥 ডেটা ডাউনলোড করুন (JSON)</button>
-        <button class="adm-save-btn" onclick="document.getElementById('importFile').click()" style="background:#0a6e45;margin-bottom:8px">📤 ডেটা আমদানি করুন (JSON)</button>
-        <input type="file" id="importFile" accept=".json" style="display:none" onchange="importData(this)"/>
-        <button class="adm-reset-btn" onclick="confirmReset()">🔄 সব ডেটা রিসেট করুন (ডিফল্টে ফিরুন)</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
 <script>
 // ═══ MEDICINE DATA ═══
-const DEFAULT_MEDS=[
+const MEDS=[
   {id:1,name:'Napa 500mg',generic:'Paracetamol',company:'Beximco',cat:'fever',price:2,unit:'পিস',ico:'🌡️',badge:'otc',stock:true},
   {id:2,name:'Napa Extra',generic:'Paracetamol+Caffeine',company:'Beximco',cat:'fever',price:3,unit:'পিস',ico:'💊',badge:'otc',stock:true},
   {id:3,name:'Ace 500mg',generic:'Paracetamol',company:'Square',cat:'fever',price:2,unit:'পিস',ico:'💊',badge:'otc',stock:true},
@@ -1063,17 +757,6 @@ const DEFAULT_MEDS=[
   {id:24,name:'Cefixime 200mg',generic:'Cefixime',company:'Incepta',cat:'antibiotic',price:28,unit:'পিস',ico:'💊',badge:'rx',stock:true},
 ];
 
-// Load from localStorage or use defaults
-function loadData(){
-  try{
-    const s=localStorage.getItem('atm_meds');
-    return s?JSON.parse(s):[...DEFAULT_MEDS];
-  }catch(e){return[...DEFAULT_MEDS];}
-}
-function saveData(){localStorage.setItem('atm_meds',JSON.stringify(MEDS));}
-
-let MEDS=loadData();
-
 const PAGE=12;
 let fil=[...MEDS],maxP=500,curCat='all',curQ='',shown=PAGE,selMed=null,cart=[];
 
@@ -1088,8 +771,8 @@ function render(){
   const BC={rx:'bdg-rx',otc:'bdg-otc'};
   grid.innerHTML=page.map(m=>`
     <div class="med-card${m.stock?'':' out'}">
-      <span class="med-bdg ${BC[m.badge]||'bdg-otc'}">${BL[m.badge]||'OTC'}</span>
-      <div class="med-img">${m.imgData?`<img src="${m.imgData}" alt="${m.name}" style="width:100%;height:100%;object-fit:contain;padding:8px"/>`:`<span class="med-emoji">${m.ico||'💊'}</span>`}</div>
+      <span class="med-bdg ${BC[m.badge]}">${BL[m.badge]}</span>
+      <div class="med-img"><span class="med-emoji">${m.ico}</span></div>
       <div class="med-body">
         <div class="med-name">${m.name}</div>
         <div class="med-generic">${m.generic}</div>
@@ -1277,344 +960,8 @@ const obs=new IntersectionObserver(entries=>{
 },{threshold:.1});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
-// ═══ DELIVERY AREAS ═══
-// ★★★ এখানে এলাকা যোগ/বাদ দিন ★★★
-// নতুন এলাকা যোগ করতে: { name:'এলাকার নাম', sub:'বিস্তারিত', icon:'🏙️' }
-// সারা দেশে সার্ভিস দিতে চাইলে: COVERAGE_MODE = 'nationwide'
-// নির্দিষ্ট এলাকায়: COVERAGE_MODE = 'local'
-
-const COVERAGE_MODE = 'local'; // 'local' অথবা 'nationwide'
-
-const DEFAULT_AREAS = [
-  // ── ত্রিশাল উপজেলার ১২টি ইউনিয়ন ──
-  { name:'ধানীখালা',    sub:'১নং ইউনিয়ন',   icon:'🌾' },
-  { name:'বৈলর',        sub:'২নং ইউনিয়ন',   icon:'🏘️' },
-  { name:'কাঁঠাল',      sub:'৩নং ইউনিয়ন',   icon:'🏙️' },
-  { name:'কানিহারী',    sub:'৪নং ইউনিয়ন',   icon:'🏙️' },
-  { name:'রামপুর',      sub:'৫নং ইউনিয়ন',   icon:'🏙️' },
-  { name:'ত্রিশাল',     sub:'৬নং ইউনিয়ন (সদর)', icon:'🏘️' },
-  { name:'হরিরামপুর',   sub:'৭নং ইউনিয়ন',   icon:'🏙️' },
-  { name:'সাখুয়া',      sub:'৮নং ইউনিয়ন',   icon:'🏙️' },
-  { name:'বালিপাড়া',   sub:'৯নং ইউনিয়ন',   icon:'🏙️' },
-  { name:'মঠবাড়ী',     sub:'১০নং ইউনিয়ন',  icon:'🏙️' },
-  { name:'মোক্ষপুর',    sub:'১১নং ইউনিয়ন',  icon:'🏙️' },
-  { name:'আমিরাবাড়ী', sub:'১২নং ইউনিয়ন',  icon:'🏙️' },
-  // ── ভালুকা উপজেলা ──
-  { name:'ভালুকা সদর',  sub:'ভালুকা উপজেলা', icon:'🏙️' },
-  { name:'ভালুকা বাজার',sub:'মূল বাজার এলাকা',icon:'🛒' },
-  { name:'হবিরবাড়ী',   sub:'ভালুকা, ময়মনসিংহ', icon:'🏙️' },
-  { name:'ভরাডোবা',     sub:'ভালুকা, ময়মনসিংহ', icon:'🏙️' },
-  { name:'উথুরা',       sub:'ভালুকা, ময়মনসিংহ', icon:'🏙️' },
-  { name:'রাজৈ',        sub:'ভালুকা, ময়মনসিংহ', icon:'🏙️' },
-];
-
-function loadAreas(){try{const s=localStorage.getItem('atm_areas');return s?JSON.parse(s):[...DEFAULT_AREAS];}catch(e){return[...DEFAULT_AREAS];}}
-function saveAreas(){localStorage.setItem('atm_areas',JSON.stringify(DELIVERY_AREAS));}
-let DELIVERY_AREAS=loadAreas();
-
-function renderAreas() {
-  const grid = document.getElementById('areaGrid');
-  const badge = document.getElementById('coverageText');
-  const title = document.getElementById('areaTitle');
-  const subtitle = document.getElementById('areaSubtitle');
-
-  if (COVERAGE_MODE === 'nationwide') {
-    // সারা দেশ মোড
-    badge.textContent = '🇧🇩 সারা বাংলাদেশে সার্ভিস';
-    title.textContent = 'সারা বাংলাদেশে ডেলিভারি';
-    subtitle.textContent = 'বাংলাদেশের যেকোনো প্রান্তে ওষুধ পৌঁছে দেওয়া হয়।';
-    grid.innerHTML = `
-      <div class="area-card" style="grid-column:1/-1;text-align:center;padding:32px;border:2px solid var(--g);">
-        <div class="area-icon" style="font-size:3rem;">🇧🇩</div>
-        <div class="area-name" style="font-size:1.2rem;margin-top:10px;">সারা বাংলাদেশ</div>
-        <div class="area-sub" style="font-size:.9rem;margin-top:6px;">সমস্ত জেলা ও উপজেলায় ডেলিভারি পাওয়া যাচ্ছে</div>
-      </div>
-      <div class="area-card" style="border:2px dashed var(--g);cursor:pointer" onclick="window.open('https://wa.me/8801701514563?text=আমার এলাকায় ডেলিভারি হবে কি?','_blank')">
-        <div class="area-icon">💬</div>
-        <div class="area-name">অর্ডার করুন</div>
-        <div class="area-sub">WhatsApp-এ এখনই</div>
-      </div>`;
-  } else {
-    // লোকাল মোড — নির্দিষ্ট এলাকা
-    badge.textContent = 'ত্রিশালের ১২ ইউনিয়ন + ভালুকা';
-    grid.innerHTML = DELIVERY_AREAS.map(a => `
-      <div class="area-card">
-        <div class="area-icon">${a.icon}</div>
-        <div class="area-name">${a.name}</div>
-        <div class="area-sub">${a.sub}</div>
-      </div>`).join('') + `
-      <div class="area-card" style="border:2px dashed var(--g);cursor:pointer" onclick="window.open('https://wa.me/8801701514563?text=আমার এলাকায় ডেলিভারি হবে কি?','_blank')">
-        <div class="area-icon">➕</div>
-        <div class="area-name">আপনার এলাকা?</div>
-        <div class="area-sub">WhatsApp-এ জিজ্ঞেস করুন</div>
-      </div>`;
-  }
-}
-
 // ═══ INIT ═══
 render();
-renderAreas();
-
-// ══════════════════════════════════════════════════════════
-// ADMIN PANEL — সম্পূর্ণ অ্যাডমিন সিস্টেম
-// ══════════════════════════════════════════════════════════
-
-// ── Password System ──
-const ADMIN_PW_KEY='atm_admin_pw';
-function getAdminPw(){return localStorage.getItem(ADMIN_PW_KEY)||'1234';}
-function openAdminLock(){
-  document.getElementById('adminPwInput').value='';
-  document.getElementById('adminPwErr').style.display='none';
-  document.getElementById('adminLock').classList.add('open');
-  setTimeout(()=>document.getElementById('adminPwInput').focus(),200);
-}
-function closeAdminLock(){document.getElementById('adminLock').classList.remove('open');}
-function checkAdminPw(){
-  const pw=document.getElementById('adminPwInput').value;
-  if(pw===getAdminPw()){closeAdminLock();openAdmin();}
-  else{document.getElementById('adminPwErr').style.display='block';}
-}
-
-// ── Admin Panel Open/Close ──
-function openAdmin(){
-  document.getElementById('adminPanel').classList.add('open');
-  document.getElementById('adminOverlay').classList.add('open');
-  document.body.style.overflow='hidden';
-  renderAdmStats();renderAdmList();renderAdmAreas();renderCatButtons();
-}
-function closeAdmin(){
-  document.getElementById('adminPanel').classList.remove('open');
-  document.getElementById('adminOverlay').classList.remove('open');
-  document.body.style.overflow='';
-}
-
-// ── Tab switching ──
-function switchTab(name,btn){
-  document.querySelectorAll('.atab').forEach(b=>b.classList.remove('active'));
-  document.querySelectorAll('.admin-section').forEach(s=>s.classList.remove('active'));
-  btn.classList.add('active');
-  document.getElementById('tab-'+name).classList.add('active');
-}
-
-// ── Stats ──
-function renderAdmStats(){
-  const total=MEDS.length,inStock=MEDS.filter(m=>m.stock).length,outStock=MEDS.filter(m=>!m.stock).length;
-  document.getElementById('admStats').innerHTML=`
-    <div class="adm-stat"><div class="adm-stat-n">${total}</div><div class="adm-stat-l">মোট ওষুধ</div></div>
-    <div class="adm-stat"><div class="adm-stat-n" style="color:#15803d">${inStock}</div><div class="adm-stat-l">স্টক আছে</div></div>
-    <div class="adm-stat"><div class="adm-stat-n" style="color:#b91c1c">${outStock}</div><div class="adm-stat-l">স্টক নেই</div></div>
-    <div class="adm-stat"><div class="adm-stat-n" style="color:#0a6e45">${DELIVERY_AREAS.length}</div><div class="adm-stat-l">ডেলিভারি এলাকা</div></div>`;
-}
-
-// ── Medicine List in Admin ──
-function renderAdmList(){
-  const q=(document.getElementById('admSearch')?.value||'').toLowerCase();
-  const list=MEDS.filter(m=>!q||m.name.toLowerCase().includes(q)||m.generic.toLowerCase().includes(q)||m.company.toLowerCase().includes(q));
-  const catMap={fever:'জ্বর/ব্যথা',diabetes:'ডায়াবেটিস',pressure:'রক্তচাপ',gastric:'গ্যাস্ট্রিক',vitamin:'ভিটামিন',antibiotic:'এন্টিবায়োটিক',other:'অন্যান্য'};
-  document.getElementById('admMedList').innerHTML=list.length?list.map(m=>`
-    <div class="adm-med-item">
-      <div class="adm-med-ico">${m.imgData?`<img src="${m.imgData}" style="width:36px;height:36px;object-fit:contain;border-radius:6px"/>`:m.ico||'💊'}</div>
-      <div class="adm-med-info">
-        <div class="adm-med-name">${m.name} <span class="adm-stock-badge ${m.stock?'adm-stock-y':'adm-stock-n'}">${m.stock?'স্টক আছে':'স্টক নেই'}</span></div>
-        <div class="adm-med-meta">${m.generic} • ${m.company} • ${catMap[m.cat]||m.cat}</div>
-      </div>
-      <div class="adm-med-price">৳${parseFloat(m.price).toFixed(2)}<br/><small style="font-weight:400;color:var(--gray)">${m.unit}</small></div>
-      <div class="adm-med-acts">
-        <button class="adm-edit-btn" onclick="editAdmMed(${m.id})" title="সম্পাদনা">✏️</button>
-        <button class="adm-del-btn" onclick="delAdmMed(${m.id})" title="মুছুন">🗑️</button>
-      </div>
-    </div>`).join(''):'<div style="text-align:center;padding:30px;color:var(--gray)">কোনো ওষুধ পাওয়া যায়নি</div>';
-}
-
-// ── Emoji Picker ──
-const EMOJIS=['💊','🌡️','🩸','💉','🧴','🍊','☀️','🦴','❤️','🫃','💪','🩺','🏥','🧬','🔬','⚕️','🩹','🫁','🫀','🧠','👁️','🦷','🦻','💋','🤒','😷','🤧','🤕'];
-function initEmojiGrid(){
-  document.getElementById('emojiGrid').innerHTML=EMOJIS.map(e=>`<button class="emoji-opt" onclick="selectEmoji('${e}')">${e}</button>`).join('');
-}
-function selectEmoji(e){
-  document.getElementById('af_ico').value=e;
-  document.getElementById('emojiPreview').textContent=e;
-  document.querySelectorAll('.emoji-opt').forEach(b=>{b.classList.toggle('sel',b.textContent===e);});
-}
-function updateEmojiPreview(){
-  const v=document.getElementById('af_ico').value;
-  document.getElementById('emojiPreview').textContent=v||'💊';
-}
-
-// ── Image handling in admin ──
-function handleAdmImg(inp){
-  const f=inp.files[0];if(!f)return;
-  if(f.size>2*1024*1024){toast('❌ ছবি ২MB-এর বেশি হবে না');return;}
-  const r=new FileReader();
-  r.onload=e=>{
-    const d=e.target.result;
-    document.getElementById('af_imgData').value=d;
-    const prev=document.getElementById('admImgPrev');
-    prev.src=d;prev.style.display='block';
-    document.getElementById('admImgLabel').style.display='none';
-  };r.readAsDataURL(f);
-}
-function clearAdmImg(){
-  document.getElementById('af_imgData').value='';
-  document.getElementById('af_imgFile').value='';
-  document.getElementById('admImgPrev').style.display='none';
-  document.getElementById('admImgLabel').style.display='block';
-}
-
-// ── Category System ──
-function loadCats(){
-  try{const s=localStorage.getItem('atm_cats');return s?JSON.parse(s):[
-    {key:'fever',label:'জ্বর/ব্যথা'},{key:'diabetes',label:'ডায়াবেটিস'},
-    {key:'pressure',label:'রক্তচাপ'},{key:'gastric',label:'গ্যাস্ট্রিক'},
-    {key:'vitamin',label:'ভিটামিন'},{key:'antibiotic',label:'এন্টিবায়োটিক'}
-  ];}catch(e){return[];}
-}
-function saveCats(){localStorage.setItem('atm_cats',JSON.stringify(CATS));}
-let CATS=loadCats();
-
-function renderCatButtons(){
-  // Update the filter bar in catalog
-  const bar=document.querySelector('.cat-filters');
-  if(bar){
-    bar.innerHTML=`<button class="cat-btn active" onclick="filterCat('all',this)">সব</button>`+
-    CATS.map(c=>`<button class="cat-btn" onclick="filterCat('${c.key}',this)">${c.label}</button>`).join('');
-  }
-  // Admin cat list
-  const adm=document.getElementById('admCatList');
-  if(adm) adm.innerHTML=CATS.map((c,i)=>`
-    <span style="display:flex;align-items:center;gap:5px;background:var(--gp);border:1.5px solid var(--border);padding:5px 11px;border-radius:20px;font-size:.82rem;font-weight:600">
-      ${c.label}
-      <button style="background:none;border:none;cursor:pointer;color:var(--red);font-size:.85rem" onclick="delCat(${i})">✕</button>
-    </span>`).join('');
-  // Update select in admin form
-  const sel=document.getElementById('af_cat');
-  if(sel) sel.innerHTML=CATS.map(c=>`<option value="${c.key}">${c.label}</option>`).join('');
-}
-
-function addCategory(){
-  const k=document.getElementById('st_catKey').value.trim().toLowerCase().replace(/\s+/g,'_');
-  const l=document.getElementById('st_catName').value.trim();
-  if(!k||!l){toast('❌ ক্যাটাগরির কী ও নাম দিন');return;}
-  if(CATS.find(c=>c.key===k)){toast('❌ এই ক্যাটাগরি আগে থেকেই আছে');return;}
-  CATS.push({key:k,label:l});saveCats();
-  document.getElementById('st_catKey').value='';document.getElementById('st_catName').value='';
-  renderCatButtons();toast('✅ ক্যাটাগরি যোগ হয়েছে: '+l);
-}
-function delCat(i){
-  if(!confirm('এই ক্যাটাগরি মুছবেন?'))return;
-  CATS.splice(i,1);saveCats();renderCatButtons();toast('🗑️ ক্যাটাগরি মুছে গেছে');
-}
-
-// ── Add / Edit Medicine ──
-let admEditId=null;
-function resetAdmForm(){
-  admEditId=null;
-  document.getElementById('admFormTitle').textContent='➕ নতুন ওষুধ যোগ করুন';
-  ['af_name','af_generic','af_company','af_price','af_unit','af_ico','af_id','af_imgData'].forEach(id=>{document.getElementById(id).value='';});
-  document.getElementById('af_cat').value='fever';
-  document.getElementById('af_badge').value='otc';
-  document.getElementById('af_stock').value='true';
-  document.getElementById('emojiPreview').textContent='💊';
-  clearAdmImg();
-  document.querySelectorAll('.emoji-opt').forEach(b=>b.classList.remove('sel'));
-}
-
-function editAdmMed(id){
-  const m=MEDS.find(x=>x.id===id);if(!m)return;
-  admEditId=id;
-  document.getElementById('admFormTitle').textContent='✏️ ওষুধ সম্পাদনা করুন';
-  document.getElementById('af_name').value=m.name||'';
-  document.getElementById('af_generic').value=m.generic||'';
-  document.getElementById('af_company').value=m.company||'';
-  document.getElementById('af_price').value=m.price||'';
-  document.getElementById('af_unit').value=m.unit||'পিস';
-  document.getElementById('af_ico').value=m.ico||'💊';
-  document.getElementById('emojiPreview').textContent=m.ico||'💊';
-  document.getElementById('af_id').value=id;
-  document.getElementById('af_cat').value=m.cat||'fever';
-  document.getElementById('af_badge').value=m.badge||'otc';
-  document.getElementById('af_stock').value=String(m.stock!==false);
-  // Image
-  if(m.imgData){
-    document.getElementById('af_imgData').value=m.imgData;
-    document.getElementById('admImgPrev').src=m.imgData;
-    document.getElementById('admImgPrev').style.display='block';
-    document.getElementById('admImgLabel').style.display='none';
-  } else {clearAdmImg();}
-  // Scroll to form
-  document.getElementById('admMedForm').scrollIntoView({behavior:'smooth',block:'start'});
-  toast('✏️ সম্পাদনার জন্য ফর্ম পূরণ হয়েছে');
-}
-
-function saveAdmMed(){
-  const name=document.getElementById('af_name').value.trim();
-  const generic=document.getElementById('af_generic').value.trim();
-  const company=document.getElementById('af_company').value.trim();
-  const price=parseFloat(document.getElementById('af_price').value);
-  const unit=document.getElementById('af_unit').value.trim()||'পিস';
-  const ico=document.getElementById('af_ico').value.trim()||'💊';
-  const cat=document.getElementById('af_cat').value;
-  const badge=document.getElementById('af_badge').value;
-  const stock=document.getElementById('af_stock').value==='true';
-  const imgData=document.getElementById('af_imgData').value||null;
-
-  if(!name){toast('❌ ওষুধের নাম দিন');return;}
-  if(!generic){toast('❌ জেনেরিক নাম দিন');return;}
-  if(!company){toast('❌ কোম্পানির নাম দিন');return;}
-  if(isNaN(price)||price<0){toast('❌ সঠিক দাম দিন');return;}
-
-  if(admEditId){
-    const idx=MEDS.findIndex(x=>x.id===admEditId);
-    if(idx>-1) MEDS[idx]={...MEDS[idx],name,generic,company,price,unit,ico,cat,badge,stock,imgData};
-    toast('✅ ওষুধ আপডেট হয়েছে: '+name);
-  } else {
-    const newId=MEDS.length?Math.max(...MEDS.map(m=>m.id))+1:1;
-    MEDS.push({id:newId,name,generic,company,price,unit,ico,cat,badge,stock,imgData});
-    toast('✅ নতুন ওষুধ যোগ হয়েছে: '+name);
-  }
-  saveData();resetAdmForm();renderAdmList();renderAdmStats();
-  fil=[...MEDS];applyFilter();
-}
-
-function delAdmMed(id){
-  const m=MEDS.find(x=>x.id===id);
-  if(!m||!confirm(`"${m.name}" মুছে ফেলবেন?`))return;
-  const idx=MEDS.findIndex(x=>x.id===id);
-  MEDS.splice(idx,1);saveData();
-  renderAdmList();renderAdmStats();fil=[...MEDS];applyFilter();
-  toast('🗑️ মুছে ফেলা হয়েছে: '+m.name);
-}
-
-// ── Area Management ──
-let admAreaIdx=null;
-function renderAdmAreas(){
-  document.getElementById('admAreaList').innerHTML=DELIVERY_AREAS.map((a,i)=>`
-    <div class="adm-area-item">
-      <div class="adm-area-ico">${a.icon||'🏙️'}</div>
-      <div class="adm-area-info">
-        <div class="adm-area-name">${a.name}</div>
-        <div class="adm-area-sub">${a.sub||''}</div>
-      </div>
-      <div class="adm-area-acts">
-        <button class="adm-edit-btn" onclick="editAdmArea(${i})" title="সম্পাদনা">✏️</button>
-        <button class="adm-del-btn" onclick="delAdmArea(${i})" title="মুছুন">🗑️</button>
-      </div>
-    </div>`).join('');
-}
-function editAdmArea(i){
-  const a=DELIVERY_AREAS[i];if(!a)return;
-  admAreaIdx=i;
-  document.getElementById('admAreaFormTitle').textContent='✏️ এলাকা সম্পাদনা';
-  document.getElementById('aa_name').value=a.name||'';
-  document.getElementById('aa_sub').value=a.sub||'';
-  document.getElementById('aa_icon').value=a.icon||'🏙️';
-  document.getElementById('aa_idx').value=i;
-}
-function saveAdmArea(){
-  const name=document.getElementById('aa_name').value.trim();
-  const sub=document.getElementById('aa_sub').value.trim();
-  const icon=document.getElementById('aa_icon').value.trim()||'🏙️';
-  if(!name){toast('❌ এলাকার নাম দিন');return;}
-  const idx=document.getElementById('aa_idx').value;
-  if(idx!==''){DELIVERY_AREAS[parseInt(idx)]={name,sub,icon};toast('✅ এলাকা আপডেট হয়েছে: '+name);}
-  else{DELIVERY_AREAS.push({na
+</script>
+</body>
+</html>
